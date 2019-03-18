@@ -4,16 +4,25 @@
 
 # Changing Case in a String with Methods
 
-name = "philipe c b"
+name = "l philipe c b"
 print(name.title())
 
-name = "Philipe C B"
+name = "L Philipe C B"
 print(name.upper())
 print(name.lower())
 
+# Not content from the book, but seems worth to put here
+
+def is_upper_case(string):
+    return string == string.upper()
+
+is_upper_case('ABC') # True
+is_upper_case('a3@$') # True
+is_upper_case('aB4') # False
+
 # Combining or Concatenating Strings
 
-first_name = "philipe"
+first_name = "l philipe"
 last_name = "c b"
 full_name = first_name + " " + last_name
 print(full_name)
